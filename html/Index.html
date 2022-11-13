@@ -13,13 +13,16 @@
 
 </head>
 <body>
-    <div class="bg-homepage"></div>   
-    <header>
+
+    <div id="top" class="bg-homepage"></div> 
+    <a class="btn-top" href="#top"></a>
+
+    <header >
         <img src="../assets/newgo-logo-horizontalwhite.png" alt="Logo superior da empresa" class="logoNav">
         <nav class="navMenu" >
             <ul>
                 <li>
-                    <a href="#homepage">Home</a>
+                    <a href="./Index.html">Home</a>
                 </li>
                 <li>
                     <a href="#about-us">Quem somos?</a>
@@ -41,23 +44,20 @@
 
         <section id="homepage" class="homepage">
             <h1>
-                Impactamos oferecendo soluções em sistemas com 
-                
+                Impactamos oferecendo soluções em sistemas com        
                 <span class="typing-words">
                     <span>EXCELÊNCIA</span>
                     <span>AGILIDADE</span>
                     <span>EFICIÊNCIA</span>
-
                 </span>
+
             </h1>
         </section>
 
-    </main>
-
-<!--
-        
         <section id="about-us" class="about-us">
-            <h1>Quem somos</h1>
+
+            <article>
+                <h2>Quem <span>somos?</span></h2>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur 
                     adipisicing elit. Soluta, similique impedit. 
@@ -65,25 +65,87 @@
                     nam earum molestias quam quia, tempore, similique 
                     repellendus nostrum fugit reiciendis perspiciatis.
                 </p>
-                <div>
-                    <img src="../assets/about-us.png" alt="Imagem do escritório">
-                    <img src="../assets/about-us-team.jpg" alt="Imagem do time de desenvolvimento">
-                    <img src="../assets/about-us-planning.jpg" alt="Imagem de um planejamento">
+            </article>
+
+            <div class="photo-gallery">
+                <img src="../assets/about-us.png" alt="Imagem do escritório">
+                <img src="../assets/about-us-team.jpg" alt="Imagem do time de desenvolvimento">
+                <img src="../assets/about-us-planning.jpg" alt="Imagem de um planejamento">
+            </div>
+
+        </section>
+
+        <section class="products" id="products">
+
+            <article>
+                <h3>Produtos e Serviços</span></h3>
+
+                <div class="card-container">
+
+                    <div class="cards-top">
+                        <div>
+                            <p>Consultoria</p>
+                            <img src="../assets/planning-svgrepo-com.svg" alt="icone de consultoria">
+                            <span>
+                                Oferecemos consultoria de ponta para nossos clientes, sempre visando a excelência e efetividade.
+                            </span>
+                        </div>
+                        <div>
+                            <p>Terceirização</p>
+                            <img src="../assets/people-svgrepo-com.svg" alt="icone de terceirização">
+                            <span>
+                                Profissionais altamente capacitados sempre estão prontos para atender nossos clientes com agilidade e eficiência.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="cards-middle">
+                        <div>
+                            <p>Fábrica de Software</p>
+                            <img src="../assets/software-svgrepo.svg" alt="icone de fabrica de software">
+                            <span>
+                                Desenvolvimento de sistemas modernos e com alto desempenho.
+                            </span>
+                        </div>
+                        <div>
+                            <p>Treinamentos</p>
+                            <img src="../assets/study-svgrepo-com.svg" alt="icone de treinamentos">
+                            <span>
+                                Todos os profissionais de nossas equipes recebem treinamentos atualizados e alinhados com a necessidade do mercado.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="cards-bottom">
+                        <div>
+                            <p>Prisma</p>
+                            <img src="../assets/prisma-logo.svg" alt="icone de terceirização">
+                            <span>
+                                Conheça nosso sistema de gerenciamento de finanças e tarefas pessoais.
+                            </span>
+                        </div>
+                    </div>
+
                 </div>
-          
+            </article>
+    
         </section>
 
-        <section id="products">
 
+
+        <section class="partners">
+    
         </section>
-
-        <section id="partners">
-
+    
+        <section class="contact">
+    
         </section>
+    </main>
 
-        <section id="contact">
+<!--
+        
 
-        </section>
+
     </main>
 
     <footer>
