@@ -383,7 +383,7 @@ header .navMenu{
 }
 
 .card-prisma:hover{
-    transform: translateY(-20px);
+    transform: translateY(-30px);
     z-index: 1;
 }
 
