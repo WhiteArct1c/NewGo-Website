@@ -422,7 +422,7 @@ header .navMenu{
 }
 
 .card-terceirizacao:hover{
-    transform: translate(20px, -50px) rotate(10deg);
+    transform: translate(50px, -20px) rotate(10deg);
     z-index: 1;
 }
 
