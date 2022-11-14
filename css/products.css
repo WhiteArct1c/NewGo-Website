@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Poppins:wght@300;400;600;700&display=swap');
+
+
+/*section: products and services*/
+.products{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   width: 100%;
+   height: 840px;
+}
+
+.products article{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   width: 100%;
+   height: 100%;
+}
+
+.products article>h3{
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 60px;
+
+   color:#FFF;
+
+   margin: 50px 0px;
+}
+
+.products .card-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   position: relative;
+
+   width: 90%;
+   height: 420px;
+   margin-top: 40px;
+}
+
+
+.cards-top{
+   display: flex;
+   justify-content: space-evenly;
+
+   position: relative;
+}
+
+.cards-middle{
+   display: flex;
+   justify-content: space-between;
+
+   position: absolute;
+   bottom: 10%;
+
+   width: 50%;
+
+}
+
+@media  screen and (max-width: 1920px) {
+   .cards-middle{
+       width: 47%;
+   }
+}
+
+.cards-bottom{
+   display: flex;
+   justify-content: space-between;
+
+   position: absolute;
+
+   width: 80%;
+
+   bottom: 0;
+}
+
+.card-consultoria{
+   width: 251px;
+   height: 329px;
+
+   border-radius: 40px;
+   box-shadow: #171717 0px 10px 10px;
+
+   background-image: url('../assets/card-consultoria.svg');
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+   background-position: top center;
+   transition: .3s;
+}
+
+.card-consultoria:hover{
+   transform: translate(-50px, -20px) rotate(-10deg);
+   z-index: 1;
+}
+
+.card-fabSoftware{
+   width: 251px;
+   height: 329px;
+
+   border-radius: 40px;
+   box-shadow: #171717 0px 10px 10px;
+   
+   background-image: url('../assets/card-fabrica.svg');
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+   background-position: top center;
+   transition: .3s;
+}
+
+.card-fabSoftware:hover{
+   transform: translate(-30px, -30px) rotate(-10deg);
+   z-index: 1;
+}
+
+.card-prisma{
+   width: 251px;
+   height: 329px;
+
+   border-radius: 40px;
+   box-shadow: #171717 0px 10px 10px;
+   
+   background-image: url('../assets/card-prisma.svg');
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+   background-position: top center;
+   transition: .3s;
+}
+
+.card-prisma:hover{
+   transform: translateY(-30px);
+   z-index: 1;
+}
+
+.card-treinamentos{
+   width: 251px;
+   height: 329px;
+
+   border-radius: 40px;
+   box-shadow: #171717 0px 10px 10px;
+   
+   background-image: url('../assets/card-treinamentos.svg');
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+   background-position: center;
+   transition: .3s;
+}
+
+.card-treinamentos:hover{
+   transform: translate(30px, -30px) rotate(10deg);
+   z-index: 1;
+}
+
+.card-terceirizacao{
+   width: 251px;
+   height: 329px;
+
+   border-radius: 40px;
+   box-shadow: #171717 0px 10px 10px;
+   
+   background-image: url('../assets/card-terceirizacao.svg');
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+   background-position: top center;
+
+   transition: .3s;
+}
+
+.card-terceirizacao:hover{
+   transform: translate(50px, -20px) rotate(10deg);
+   z-index: 1;
+}
