@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Poppins:wght@300;400;600;700&display=swap');
+
+.contact{
+   display: flex;
+   background-color: #FFF;
+
+   height: 800px;
+}
+
+form{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+
+   width: 713px;
+   margin-left: 164px;
+}
+
+.map{
+   width: 386.01px;
+   height: 475.09px;
+}
+
+iframe{
+   width:100%;
+   height: 100%;
+}

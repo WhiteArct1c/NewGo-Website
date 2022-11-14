@@ -8,8 +8,7 @@
 
    width: 100%;
 
-   animation: fadeIn 2s backwards;
-   animation-delay: .2s;
+   
 }
 
 .homepage h1{
@@ -79,7 +78,3 @@
    50% { border-color: #FFF; }
 }
 
-@keyframes fadeIn{
-   from{opacity: 0}
-   to{opacity: 1}
-}
