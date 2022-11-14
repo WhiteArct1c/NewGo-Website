@@ -8,7 +8,10 @@
    align-items: center;
 
    width: 100%;
-   height: 840px;
+   height: 780px;
+   padding-top: 65px;
+
+   background-color: #262626;
 }
 
 .products article{
@@ -24,11 +27,12 @@
    font-family: 'Poppins';
    font-style: normal;
    font-weight: 700;
-   font-size: 60px;
+   font-size: 3.5rem;
 
    color:#FFF;
 
-   margin: 50px 0px;
+   margin-top: 40px;
+   margin-bottom: 20px;
 }
 
 .products .card-container{
@@ -60,12 +64,6 @@
 
    width: 50%;
 
-}
-
-@media  screen and (max-width: 1920px) {
-   .cards-middle{
-       width: 47%;
-   }
 }
 
 .cards-bottom{
@@ -173,4 +171,12 @@
 .card-terceirizacao:hover{
    transform: translate(50px, -20px) rotate(10deg);
    z-index: 1;
+}
+
+
+/*responsividade*/
+@media  screen and (max-width: 1920px) {
+   .cards-middle{
+       width: 47%;
+   }
 }

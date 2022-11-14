@@ -2,9 +2,13 @@
 
 .contact{
    display: flex;
+   justify-content: center;
+   align-items: center;
    background-color: #FFF;
 
-   height: 800px;
+   height: 835px;
+
+   color: #171717;
 }
 
 form{
@@ -12,16 +16,134 @@ form{
    align-items: center;
    flex-direction: column;
 
-   width: 713px;
-   margin-left: 164px;
+   width: 600px;
+   height: 630px;
+
+   box-shadow: 10px 10px 25px #171717 ;
+   border-radius: 30px;
+
+   z-index: 1;
+}
+
+form>p{
+   padding-top: 50px;
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 3rem;
+}
+
+form>label{
+   margin: 9px 0px;
+
+   font-family: 'Heebo';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 1.2rem;
+   text-align: center;
+}
+
+form>input{
+   width: 440.16px;
+   height: 35px;
+
+   padding: 15px;
+
+   border-radius: 30px;
+}
+
+form>textarea{
+   margin: 5px 0px;
+
+   width: 440.16px;
+   height: 183.4px;
+
+   padding: 20px;
+
+   border-radius: 30px;
+
+   resize: none;
+}
+
+form>button{
+   width: 191.26px;
+   height: 46.29px;
+
+   margin-top: 18px;
+   border-radius: 10px;
+
+   background-color: #3485DA;
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 1.5rem;
+   text-align: center;
+
+   border: none;
+   color: #FFF;
+
+   cursor: pointer;
+
+   transition: .3s;
+}
+
+form>button:hover{
+   transform: scale(1.1);
 }
 
 .map{
    width: 386.01px;
    height: 475.09px;
+   padding: 20px 0px;
+   padding-right: 20px;
+
+   border-radius: 0px 30px 30px 0px;
+   box-shadow: 10px 10px 25px #171717 ;
+   
 }
 
 iframe{
    width:100%;
    height: 100%;
+
+   border-radius: 0px 20px 20px 0px;
 }
+
+footer{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   width: 100%;
+   height: 143px;
+
+   padding: 0px 20px;
+
+   background: #171717;
+   color: #C7C7C7;
+}
+
+footer *{
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 500;
+   font-size: .85rem;
+
+   text-decoration: none;
+   color: #C7C7C7;
+}
+
+footer span{
+   padding-right: 7rem;
+}
+
+.social{
+   display: flex;
+   justify-content: space-between;
+   
+   width: 99px;
+   height: 33px;
+}
+

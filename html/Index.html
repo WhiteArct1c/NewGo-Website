@@ -19,8 +19,7 @@
 </head>
 <body>
 
-    <div id="top" class="bg-homepage"></div> 
-    <a class="btn-top" href="#top"></a>
+    <div id="top" class="bg-homepage"></div>
 
     <header >
         <a href="./Index.html">
@@ -29,7 +28,7 @@
         <nav class="navMenu" >
             <ul>
                 <li>
-                    <a href="./Index.html">Home</a>
+                    <a href="#top">Home</a>
                 </li>
                 <li>
                     <a href="#about-us">Quem somos?</a>
@@ -67,11 +66,14 @@
                 <div class="text-container">
                     <h2>Quem <span>somos?</span></h2>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur 
-                        adipisicing elit. Soluta, similique impedit. 
-                        Quo sequi, dolorum corporis magnam ipsum officia
-                        nam earum molestias quam quia, tempore, similique 
-                        repellendus nostrum fugit reiciendis perspiciatis.
+                        Somos a NewGo, uma empresa inovadora, focada em projetar 
+                        e desenvolver as melhores soluções de software para seus clientes. 
+                        Trabalhamos com desenvolvimento de sistemas sob medida: web, móvel e desktop. 
+                        Nossos especialistas em Inteligência Artificial, Visão Computacional, 
+                        Segurança de Sistemas e Teste de Software contribuem para a excelência
+                        dos serviços que disponibilizamos neste segmento.Com total confiabilidade, 
+                        desenvolvemos a sua ideia para proporcionar as melhores soluções sob medida 
+                        para o seu projeto.
                     </p>
                 </div>
             </article> 
@@ -106,20 +108,27 @@
             
             <h4>Parceiros</h4>
 
-            <div class="carousel-container"></div>
+            <div class="carousel-container">
+                <div class="items">
+                    <div class="logo-smiles"></div>
+                    <div class="logo-gol"></div>
+                    <div class="logo-vivo"></div>
+                </div>
+            </div>
 
         </section>
 
 
-        <section class="contact">
+        <section id="contact" class="contact">
   
             <form action="mailto:matheus.bispo@newgo.com.br" method="post">
                 <p>Contate-nos!</p>
-                <label for="Name">Nome</label>
-                <input type="text"/>
-                <label for="Name">E-mail</label>
-                <input type="email"/>
-                <textarea cols="30" rows="10" placeholder="Insira sua mensagem aqui..."></textarea>
+                <label for="name">Nome</label>
+                <input type="text" required/>
+                <label for="email">E-mail</label>
+                <input type="email" required/>
+                <label for="subject">Mensagem</label>
+                <textarea cols="30" rows="10" placeholder="Insira sua mensagem aqui..." ></textarea>
                 <button>Enviar</button>
             </form>
             
@@ -129,7 +138,23 @@
         </section>
 
         <footer>
-            
+            <address>
+                <p>R. Vitório Partênio, 142 - Vila Oliveira</p>
+                <p>Mogi das Cruzes - SP, 08780-410</p>
+            </address>
+            <span>
+                <a href="https://www.newgo.com.br" target="_blank">
+                    NewGo Tecnologia © 2022
+                </a>
+            </span>
+            <div class="social">
+                <a href="https://www.instagram.com/newgotecnologia/" target="_blank">
+                    <img src="../assets/instagram-footer.svg" alt="logo do instagram">
+                </a>
+                <a href="https://www.linkedin.com/company/newgotecnologia/" target="_blank">
+                    <img src="../assets/linkedin-footer.svg" alt="logo do linkedin">
+                </a>
+            </div>
         </footer>
     </main>
 </body>
