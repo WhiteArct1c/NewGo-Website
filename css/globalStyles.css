@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 html{
@@ -44,7 +43,7 @@ header{
     background-color: #111;
 
     padding: 50px;
-    width: 100vw;
+    width: 100%;
     height: 90px;
     z-index: 2;
 
@@ -60,6 +59,18 @@ header .logoNav{
     height: 70px;
     margin-right: 256px;
     padding-top: 5px;
+}
+
+header .logoMobile{
+    display: none;
+}
+
+header .mobile-links{
+    display: none;
+}
+
+header #nav-check{
+    display: none;
 }
 
 header a{
@@ -118,3 +129,88 @@ header .navMenu{
 }
 
 
+/*responsividade*/
+@media screen and (max-width: 1020px){
+    .bg-homepage{
+        height: 800px;
+    }
+
+    header{
+        width: 100vw;
+        justify-content: space-between;
+        padding: 35px;
+
+        z-index: 5;
+    }
+
+    header .navMenu{
+        display: none;
+    }
+
+    header .logoNav{
+        display: none;
+    }
+
+    header>a{
+        width: 73px;
+        height: 73px;
+    }
+
+    header .logoMobile{
+        display: inline;
+        background-color: #111;
+        width: 100%;
+        height: 100%;
+    }
+
+    header > .nav-mobile {
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 15px;   
+    }
+    header > .nav-mobile > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    header > .nav-mobile > label:hover,header  #nav-check:checked ~ .nav-mobile > label {
+        background-color: #171717;
+    }
+    header > .nav-mobile > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+    header > .mobile-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 86px;
+        left: 0px;
+    }
+    header > .mobile-links > a {
+        display: block;
+        text-decoration: none;
+        color: #FFF;
+
+        text-align: center;
+        font-size: 1.5rem;
+        width: 100%;
+
+        margin-top: 30px;
+    }
+    header > #nav-check:not(:checked) ~ .mobile-links {
+        height: 0px;
+    }
+    header > #nav-check:checked ~ .mobile-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}

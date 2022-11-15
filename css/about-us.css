@@ -19,7 +19,7 @@
 
    width: 100%;
    margin: 0 200px;
-   height: 700px;
+   height: 800px;
 }
 
 .about-us .text-container{
@@ -27,7 +27,7 @@
    flex-direction: column;
    justify-content: center;
 
-   width: 900px;
+   width: 100%;
 
    margin-right: 100px;
 }
@@ -39,6 +39,7 @@
 
    color:#FFF;
 }
+
 .about-us article h2>span{
    font-family: 'Poppins';
    font-weight: 700;
@@ -68,7 +69,59 @@
 
    background-image: url('../assets/about-us-photos.svg');
    background-position: center;
-   background-size: 100% auto;
+   background-size: 100% 100%;
    background-repeat: no-repeat;
 
+}
+
+
+/*responsividade*/
+@media screen and (max-width: 1200px){
+   
+   .about-us{
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: 1000px;
+   }
+
+   .about-us article{
+      display: flex;
+      flex-direction: column;
+
+      margin: 0 25px;
+      height: 900px;
+
+      width: 100%;
+   }
+
+   .about-us .text-container{
+      margin: 0;
+      margin-bottom: 20px;
+   }
+
+   .about-us article h2{
+      font-family: 'Poppins';
+      font-weight: 500;
+      font-size: 3rem;
+      
+      padding-top: 60px;
+      color:#FFF;
+   }
+   
+   .about-us article h2>span{
+      font-family: 'Poppins';
+      font-weight: 700;
+      font-size: 3.2rem;
+      color: #68B54C;
+   }
+
+   .about-us article p{
+      font-size: 1rem;
+   }
+
+   
 }

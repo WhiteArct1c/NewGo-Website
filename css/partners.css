@@ -16,7 +16,7 @@
    font-family: 'Poppins';
    font-style: normal;
    font-weight: 700;
-   font-size: 60px;
+   font-size: 4rem;
 
    color: #FFF;
 
@@ -99,3 +99,38 @@
    background-position: center;
 }
 
+
+/*responsividade*/
+@media screen and (max-width: 414px){
+
+   .partners{
+      height: 500px;
+   }
+
+   .partners h4{
+      font-size: 2.4rem;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .partners{
+      height: 620px;
+   }
+   
+   .partners h4{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.4rem;
+   
+      color: #FFF;
+   
+      text-align: center;
+      
+   }
+   
+   .carousel-container{
+      width: 70%;
+      height: 300px; 
+   }
+}

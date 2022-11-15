@@ -62,7 +62,7 @@
    position: absolute;
    bottom: 10%;
 
-   width: 100%;
+   width: 47%;
 
 }
 
@@ -144,7 +144,7 @@
    background-image: url('../assets/card-treinamentos.svg');
    background-size: 100% auto;
    background-repeat: no-repeat;
-   background-position: center;
+   background-position: top center;
    transition: .3s;
 }
 
@@ -177,12 +177,11 @@
 
 
 /*responsividade*/
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 2500px) {
    .cards-middle{
       display: flex;
       justify-content: space-between;
-
-      width: 50%;
+      
    }
 }
 
@@ -216,7 +215,7 @@
    .cards-middle{
       display: flex;
       justify-content: space-between;
-      width: 80%;
+      width: 66%;
    }
 
    .cards-bottom{
@@ -229,24 +228,18 @@
    }
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 840px){
    
    .products .card-container{
       display: flex;
       flex-direction: column;
       align-items: center;
 
-
       width: 90%;
       height: 420px;
       margin-top: 40px;
    }
 
-
-   .cards-top{
-      display: flex;
-      justify-content: space-evenly;
-   }
 
    .cards-middle{
       display: flex;
@@ -258,7 +251,7 @@
       display: flex;
       justify-content: space-between;
 
-      width: 80%;
+      width: 100%;
 
       z-index: 3;
    }
@@ -279,7 +272,7 @@
 
    .card-consultoria:hover{
       transform: translate(-50px, -20px) rotate(-10deg);
-      z-index: 1;
+      z-index: 4;
    }
 
    .card-fabSoftware{
@@ -298,7 +291,7 @@
 
    .card-fabSoftware:hover{
       transform: translate(-30px, -30px) rotate(-10deg);
-      z-index: 1;
+      z-index: 4;
    }
 
    .card-prisma{
@@ -317,7 +310,7 @@
 
    .card-prisma:hover{
       transform: translateY(-30px);
-      z-index: 1;
+      z-index: 4;
    }
 
    .card-treinamentos{
@@ -336,7 +329,7 @@
 
    .card-treinamentos:hover{
       transform: translate(30px, -30px) rotate(10deg);
-      z-index: 1;
+      z-index: 4;
    }
 
    .card-terceirizacao{
@@ -356,6 +349,112 @@
 
    .card-terceirizacao:hover{
       transform: translate(50px, -20px) rotate(10deg);
+      z-index: 4;
+   }
+}
+
+@media screen and (max-width: 600px){
+   .products{
+      padding-top: 50px;
+      height: 1000px;
+   }
+   
+   .products article>h3{
+      width: 100%;
+      font-size: 2.4rem;
+      text-align: center;
+   }
+
+   .products .card-container{
+      position: static;
+      height: 100%;
+      gap: 10px;
+   }
+
+   .cards-top{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: static;
+      
+   }
+
+   .cards-middle{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+
+      position: static;
+   }
+
+   .cards-bottom{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      position: static;
+
+      z-index: 0;
+
+      width: 100%;
+   }
+
+   .card-consultoria{
+      width: 100%;
+      height: 240px;
+
+      background-size: cover;
+   }
+
+   .card-terceirizacao{
+      width: 100%;
+      height: 240px;
+
+      background-size: cover;
+   }
+
+   .card-fabSoftware{
+      width: 100%;
+      height: 240px;
+
+      background-size: cover;
+   }
+
+   .card-treinamentos{
+      width: 100%;
+      height: 240px;
+
+      background-size: cover;
+   }
+
+   .card-prisma{
+      width: 160px;
+      height: 220px;
+
+      border-radius: 28px;
+      background-size: cover;
+   }
+
+   .card-consultoria:hover{
+      transform: scale(1.1);
+      z-index: 1;
+   }
+   .card-terceirizacao:hover{
+      transform: scale(1.1);
+      z-index: 1;
+   }
+   .card-fabSoftware:hover{
+      transform: scale(1.1);
+      z-index: 1;
+   }
+   .card-prisma:hover{
+      transform: scale(1.1);
+      z-index: 1;
+   }
+   .card-treinamentos:hover{
+      transform: scale(1.1);
       z-index: 1;
    }
 }
