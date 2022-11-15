@@ -44,7 +44,7 @@ header{
     background-color: #111;
 
     padding: 50px;
-    width: 100%;
+    width: 100vw;
     height: 90px;
     z-index: 2;
 
@@ -81,6 +81,7 @@ header .navMenu{
     justify-content: center;
     list-style: none;
     justify-content: space-between;
+
     width: 100%;
 }
 
